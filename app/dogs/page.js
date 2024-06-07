@@ -52,14 +52,14 @@ export default function Dogs(){
                 <aside className="Infos">
                     <ul>
                     <p>Caxorros</p>
-                        <li></li>        
-                       {racas.map(r => {return <li onClick={()=> {buscarimgs(r); alteraNome(r)}} >{r}</li>})}
+                              
+                       {racas.map((r, index) => {return <li key={index} onClick={()=> {buscarimgs(r); alteraNome(r)}} >{r}</li>})}
                     </ul>
                     
                 </aside>
                 <h3>{nome}</h3>
                 <div className="Main">
-                        {imgcachorro.map(i => {return <img src={i}/> })}
+                        {imgcachorro.map((i, index) => {return <img key={index} src={i} alt={"Dog" + index} /> })}
                 </div>
                 </div>
             </div>
