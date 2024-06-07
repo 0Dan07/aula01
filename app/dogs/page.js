@@ -38,7 +38,6 @@ export default function Dogs(){
         buscarimgs();
     }, []);
 
-    teste=1
     return(
 
         <div id="Dog" >
